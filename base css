@@ -3,7 +3,14 @@ color: 文字顏色
 font-family: 字體
 display: specifies the display behavior
     flex: 
+        flex-direction: column;
+    align-items
     none: no show
     inline: follow the word
     block: (like <p>). It starts on a new line, and takes up the whole width
     inline-block: independent the first word
+
+justify-content: ;
+
+
+align-items
