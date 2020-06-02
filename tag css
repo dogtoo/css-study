@@ -1,0 +1,11 @@
+body {} : The <body> tag defines the document's body.
+
+selector
+.card {} : CSS class Selector
+    all HTML elements with class="card"
+    
+#para1 {} : id Selector
+    HTML element with id="para1"
+    
+p {} : element Selector
+    all <p> elements on the page 
