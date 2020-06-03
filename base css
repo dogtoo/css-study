@@ -16,6 +16,8 @@ display: specifies the display behavior
         grid-auto-rows: Defines the size of grid rows that were created implicitly: 
                         it means that grid-auto-rows targets the rows that were not defined 
                         with grid-template-rows or grid-template-areas.
+        grid-row:
+        grid-column:
 
 justify-content: ;
 
@@ -26,3 +28,4 @@ repeat: 重覆次數
 minmax:  a size range greater than or equal to min and less than or equal to max
 auto-fill: 盡量放入要重複的track。
 auto-fit: 盡量放入要重複的track，但空白track的size會被設為0px，折疊起來。
+span: 物件所佔用的欄位數 / 物件所在的 grid 名稱
