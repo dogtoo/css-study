@@ -9,8 +9,20 @@ display: specifies the display behavior
     inline: follow the word
     block: (like <p>). It starts on a new line, and takes up the whole width
     inline-block: independent the first word
+    
+    grid: 格線，flex進階
+        gap: grid 間的間隙
+        grid-template-columns: line names and track sizing functions of the grid columns.
+        grid-auto-rows: Defines the size of grid rows that were created implicitly: 
+                        it means that grid-auto-rows targets the rows that were not defined 
+                        with grid-template-rows or grid-template-areas.
 
 justify-content: ;
 
 
 align-items
+
+repeat: 重覆次數
+minmax:  a size range greater than or equal to min and less than or equal to max
+auto-fill: 盡量放入要重複的track。
+auto-fit: 盡量放入要重複的track，但空白track的size會被設為0px，折疊起來。
