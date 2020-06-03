@@ -1,0 +1,32 @@
+@media:
+  Types:
+    all	    所有裝置。
+    print	  印刷裝置，包含使用列印預覽產生的所有畫面 ( 例如列印為 pdf )。
+    screen	螢幕裝置，不屬於 print 和 speech 的設備。
+    speech	朗讀裝置，針對可以「讀出」頁面的設備。]
+  Fratures:
+    Viewport/Page Dimensions:
+      width	螢幕寬度，支援 max-width 和 min-width。
+      height	螢幕高度，支援 max-height 和 min-height。
+      aspect-ratio	螢幕長寬比例，支援 max-aspect-ratio 和 min-aspect-ratio。( 長寬比的寫法格式為 1/1、1680/720...等 )
+      orientation	螢幕旋轉方向，有兩個選項：portrait 和 landscape。 ( portrait 為直向，landscape 為橫向 )
+    Display Quality：
+      resolution	解析度 ( dpi、ppx...等 )，支援 max-resolution 和 min-resolution
+      scan	電視掃描方式，有兩個選項：interlace 和 progressive。 ( interlace 為交錯式掃描，奇數偶數掃描線交錯，progressive 為漸進式掃描，是現在大多數電視採用的方式 )
+      update	更新媒體，有三個選項：none、slow 和 fast。( none 表示不會更新的顯示裝置，例如印出來的文件，slow 表示更新速度慢的顯示裝置，fast 表示更新速度快的裝置，例如電腦螢幕 )
+      overflow-block	當內容包含 block 特性並超過邊界範圍，有四個選項：none、scroll、optional-paged 和 paged。( none 表示任何超過範圍都不顯示，例如看板，scroll 表示可滾動查看超出範圍，例如電腦螢幕，optional-paged 表示可手動查看超出的內容，例如簡報，paged 表示超出的內容會以分頁顯示，例如印表機 )
+      overflow-inline	當內容包含 inline 特性並超過邊界範圍，有兩個選項：none 和 scroll。
+      grid	網格媒體，兩個選項：0 和 1。
+    Color:
+      color	輸出裝置的色彩位元數，若數值為 0 則代表黑白裝置，支援 max-color 和 min-color。
+      color-index	輸出裝置的色彩索引位元數，支援 max-color-index 和 min-color-index。
+      monochrome	單色媒體功能，若數值為 0 表示「不是」單色設備。
+      color-gamut	輸出裝置色域，有三個選項：srgb、p3 和 rec2020。( 絕大多數的顯示器都支援 srgb，而 p3 的色域比 srgb 更廣且包含 srgb，rec2020 比 p3 更大且包含 p3 )
+    Interaction :
+      pointer、any-pointer	指標裝置 ( 例如滑鼠 ) 的準確性，有三個選項：none、coarse 和 fine。( none 表示沒有指標裝置，coarse 表示精度較差的指標裝置，像是觸控螢幕，fine 表示精度比較高的裝置，像是滑鼠或手寫筆 )
+      hover、any-hover	裝置具備 hover 的能力，有兩個選項：none 和 hover。
+  應用實例: 滿足 Fratures 的邏輯式
+    or:
+    and:
+    not:
+    only:
