@@ -12,10 +12,13 @@ display: specifies the display behavior
     
     grid: 格線，flex進階
         gap: grid 間的間隙
+        grid-template-rows: /* <track-list> values */  
+                            200px repeat(auto-fill, 100px) 300px;
         grid-template-columns: line names and track sizing functions of the grid columns.
         grid-auto-rows: Defines the size of grid rows that were created implicitly: 
                         it means that grid-auto-rows targets the rows that were not defined 
                         with grid-template-rows or grid-template-areas.
+        grid-auto-columns:
         grid-row:
         grid-column:
 
