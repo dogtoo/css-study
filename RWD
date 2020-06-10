@@ -30,3 +30,30 @@
     and:
     not:
     only:
+
+
+@keyframes [animation name] CSS動畫Animation
+    from {css.style}
+    to {css.style}
+    可以不用from和to，而是直接使用百分比 ex:
+        0% {css.style}
+        10% {css.style}
+        ...
+    
+    css tag: 對應的class要設定秒數式動作效果
+        animation: [animation name, animation-delay, animation-timing-function]
+            animation-timing-function：這個屬性是用來控制動畫執行過程中的速度變化，包含
+                ease，這是預設值，動畫一開始慢慢的，接著會漸漸加速，結束的時候再慢下來。
+                linear，動畫從開始到結束的過程都是一樣的速度。
+                ease-in，動畫開始的速度較慢。
+                ease-out，動畫結束的速度較慢。
+                ease-in-out，動畫的開始和結束時的速度較慢。
+                cubic-bezier(n,n,n,n)，自行定義動畫的速度。
+        animation-fill-mode:
+        animation-delay: 這個動畫會延遲幾秒後才進行
+        animation-direction：這個屬性可以指定動畫進行的方向
+        
+        position: relative，同時製造出移動的動畫效果
+        
+        
+    
