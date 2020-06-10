@@ -1,6 +1,40 @@
 background: 背景属性
 color: 文字顏色
 font-family: 字體
+opacity: 不透明
+transform： 
+    <matrix()> = matrix( <number>#{6} )
+    <translate()> = translate( <length-percentage> , <length-percentage>? )
+    <translateX()> = translateX( <length-percentage> )
+    <translateY()> = translateY( <length-percentage> )
+    <scale()> = scale( <number> , <number>? )
+    <scaleX()> = scaleX( <number> )
+    <scaleY()> = scaleY( <number> )
+    <rotate()> = rotate( [ <angle> | <zero> ] )
+    <skew()> = skew( [ <angle> | <zero> ] , [ <angle> | <zero> ]? )
+    <skewX()> = skewX( [ <angle> | <zero> ] )
+    <skewY()> = skewY( [ <angle> | <zero> ] )
+    <matrix3d()> = matrix3d( <number>#{16} )
+    <translate3d()> = translate3d( <length-percentage> , <length-percentage> , <length> )
+    <translateZ()> = translateZ( <length> )
+    <scale3d()> = scale3d( <number> , <number> , <number> )
+    <scaleZ()> = scaleZ( <number> )
+    <rotate3d()> = rotate3d( <number> , <number> , <number> , [ <angle> | <zero> ] )
+    <rotateX()> = rotateX( [ <angle> | <zero> ] )
+    <rotateY()> = rotateY( [ <angle> | <zero> ] )
+    <rotateZ()> = rotateZ( [ <angle> | <zero> ] )
+    <perspective()> = perspective( <length> )
+filter: 
+    <blur()> = blur( <length> )
+    <brightness()> = brightness( <number-percentage> )
+    <contrast()> = contrast( [ <number-percentage> ] )
+    <drop-shadow()> = drop-shadow( <length>{2,3} <color>? )
+    <grayscale()> = grayscale( <number-percentage> )
+    <hue-rotate()> = hue-rotate( <angle> )
+    <invert()> = invert( <number-percentage> )
+    <opacity()> = opacity( [ <number-percentage> ] )
+    <saturate()> = saturate( <number-percentage> )
+    <sepia()> = sepia( <number-percentage> )
 display: specifies the display behavior
     flex: 
         flex-direction: column;
